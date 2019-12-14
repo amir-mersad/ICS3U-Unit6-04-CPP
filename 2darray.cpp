@@ -19,9 +19,9 @@ int sumOfNumbers(int (&passedIn2DList)[rows][cols]) {
     for (size_t rowElement = 0; rowElement < rows; ++rowElement) {
         for (size_t columnElement = 0; columnElement < cols; ++columnElement) {
             total += passedIn2DList[rowElement][columnElement];
+            counter += 1;
         }
     }
-    counter = rows * cols;
     result = total / counter;
     return result;
 }
